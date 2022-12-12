@@ -5,3 +5,11 @@
 ;;   (if (= x 0)
 ;;       0
 ;;       y))
+(defun p() #'p)
+(defun test(x y)
+  (if (= x 0)
+      0
+      y)
+)
+
+(write (test 0 p))
